@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Contacto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>        
+            <div class="caja">
+              <h1> <img src="img/Logotipo.png" class="logotipo" alt="logotipo"> </h1>
+                   <nav>
+                      <ul>
+                        <li> <a href="index.html"> Home </a></li>
+                        <li> <a href="categorias.html"> Categorías</a></li>
+                        <li> <a href="contacto.html"> Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+
+            <main>
+                <form>
+                    <label for="nombreapellido"> Nombre y apellido</label>
+                    <input type="text" id="nombreapellido" class="input-ppal" required>
+
+                    <label for="correoelectronico"> Correo electrónico</label>
+                    <input type="email" id="correoelectronico" class="input-ppal" required placeholder="email@dominio.com">
+                    
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="input-ppal" required placeholder="(+XX) XXXX XXXX">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje"></textarea class="input-ppal" required>
+
+                        <fieldset>
+                            <legend>¿Cuál medio prefiere para el contacto?</legend>
+
+                            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                            
+                            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                            
+                            <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                            
+                        </fieldset> 
+
+                        <fieldset>
+                            <legend>¿En cuál horario prefiere ser contactado?</legend>
+                            <select>
+                                <option>Mañana</option>
+                                <option>Tarde</option>
+                                <option>Noche</option>
+                            </select>
+                        </fieldset>
+                    
+                    <label class="checkbox"> <input type="checkbox" checked
+                        >¿Le gustaría recibir actualizaciones sobre nuestro sitio web? </label>
+
+                    <input type="submit" value="Enviar formulario" class="enviar">
+                    
+                </form>
+
+                <table class="tabla-horarios">
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th> 
+                        </tr>
+                    </thead>    
+
+                    <tbody>
+                        <tr>
+                            <td>Martes</td>
+                            <td>08h - 20h</td> 
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>08h - 20h</td> 
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>08h - 20h</td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+    
+            <footer>
+                <img src="img/Logotipo_Blanco.png" class="logo-footer" alt="logotipo">
+                <p class="copyright">&copy Copyright Fotografía Cotidiana - 2024</p>
+            </footer>
+        </body>
+    </html>
